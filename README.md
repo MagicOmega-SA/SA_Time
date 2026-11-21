@@ -11,3 +11,7 @@
 ## 编译
 
 使用 32 位 MinGW-w64 运行 `python build.py`。可通过 `MOE_MINGW` 指定工具链的 `bin` 目录。
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)。
