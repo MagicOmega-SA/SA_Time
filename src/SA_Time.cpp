@@ -222,7 +222,7 @@ void Draw()
     const int panelHeight = lineHeight + 20;
     const int left = center - panelWidth / 2;
     if (panelWidth > viewWidth || panelHeight > viewHeight) return;
-    const int offset = 2 * panelWidth;
+    const int offset = (13 * panelWidth + 5) / 10;
     const int maxOffset = viewHeight - panelHeight;
     const int top = viewTop + (offset < maxOffset ? offset : maxOffset);
 

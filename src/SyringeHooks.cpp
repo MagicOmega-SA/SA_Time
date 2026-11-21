@@ -38,7 +38,7 @@ extern "C" __declspec(dllexport) HRESULT __cdecl SyringeHandshake(SyringeHandsha
     const bool supported = info->exeFilesize == 4816864 && info->exeTimestamp == 0x3BDF544E &&
         info->exeCRC == 0x1B499086;
     if (info->message && info->messageCapacity > 0)
-        lstrcpynA(info->message, supported ? "SA_Time 1.0.1" :
+        lstrcpynA(info->message, supported ? "SA_Time 1.0.2" :
             "SA_Time requires the Mental Omega 3.3.6 game executable", info->messageCapacity);
     return supported ? S_OK : S_FALSE;
 }
